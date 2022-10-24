@@ -4,7 +4,8 @@
   .section-title {
     color: white;
     padding-top: 20px;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
+    margin-left: 15px;
     #top-text {
       font-weight: bolder;
     }
@@ -16,19 +17,25 @@
     width: 98vw;
     &--item {
       width: 270px;
+      
     }
   }
   .first {
     display: flex;
-    &--item {
-      width: 250px;
-    }
   }
   .second {
     display: flex;
-    &--item {
-      width: 250px;
+  }
+  .item {
+    width: 250px;
+    &:hover {
+      transform: scale(1.2);
+      transition: all .2s ease-out;
     }
+    /* &:not(:hover) {
+      transform: scale(-1.2);
+      transition: all .2s ease-out;
+    } */
   }
 }
 
