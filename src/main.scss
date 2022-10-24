@@ -1,3 +1,12 @@
+@import './styles/variables';
+
+//components
+@import './styles/components/header';
+@import './styles/components/main';
+
 * {
-  background-color: darkblue;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $font-family;
 }

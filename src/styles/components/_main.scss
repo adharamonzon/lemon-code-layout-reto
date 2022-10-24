@@ -1,0 +1,38 @@
+.main {
+  background-color: $bg-principal;
+  padding-bottom: 30px;
+  .section-title {
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    #top-text {
+      font-weight: bolder;
+    }
+  }
+  .top {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    width: 98vw;
+    &--item {
+      width: 270px;
+    }
+  }
+  .first {
+    display: flex;
+    &--item {
+      width: 250px;
+    }
+  }
+  .second {
+    display: flex;
+    &--item {
+      width: 250px;
+    }
+  }
+}
+
+//estilos generales
+.img {
+  width: 100%;
+}
