@@ -1,0 +1,81 @@
+//pantallas mas grandes de 1280px
+@media all and (min-width: 1750px) {
+  .main .top {
+    &--item {
+      width: 400px;
+    }
+  }
+}
+
+@media all and (min-width: 1520px) {
+  .main {
+    .item {
+      width: auto;
+    }
+  }
+}
+
+//tablet - desktop
+@media all and (max-width: 1280px) {
+  .main{
+    .first, .second {
+      flex-wrap: wrap;
+      row-gap: 25px;
+    }
+    .item {
+      width: max-content;
+      flex-grow: 1;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+//mobile - tablet
+@media all and (max-width: 1070px) {
+  .main {
+    #top-text{
+      visibility: hidden;
+      &::after {
+        visibility: visible;
+        content: "3";
+        margin-left: -5px;
+        }
+    } 
+    .top {
+      #item5, #item4 {
+        display: none;
+      }
+    }
+    .item {
+      width: 225px;
+    }
+  }
+}
+
+//mobile
+@media all and (max-width: 440px) {
+  .header {
+    &--logo {
+      width: 190px;
+      .logo{
+        width: 65px;
+        height: auto;
+      }
+      .platform-title{
+        width: 150px;
+      }
+      &--buttons {
+        width: auto;
+      }
+    }
+  }
+  .main {
+    .top {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

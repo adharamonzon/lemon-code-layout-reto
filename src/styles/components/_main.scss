@@ -1,6 +1,7 @@
 .main {
   background-color: $bg-principal;
   padding-bottom: 30px;
+  overflow-x: hidden;
   .section-title {
     color: white;
     padding-top: 20px;
@@ -14,10 +15,14 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
-    width: 98vw;
+    width: 100%;
     &--item {
-      width: 270px;
-      
+      width: fit-content;
+      &:hover {
+        z-index: 99;
+        transform: scale(1.05);
+        transition: all .2s ease-out;
+      }
     }
   }
   .first {
@@ -29,13 +34,13 @@
   .item {
     width: 250px;
     &:hover {
+      z-index: 999;
       transform: scale(1.2);
       transition: all .2s ease-out;
     }
-    /* &:not(:hover) {
-      transform: scale(-1.2);
-      transition: all .2s ease-out;
-    } */
+    &:not(:hover) {
+      opacity: 0.7
+    }
   }
 }
 
