@@ -57,21 +57,28 @@
 //mobile
 @media all and (max-width: 440px) {
   .header {
+    justify-content: space-evenly;
     &--logo {
       width: 190px;
       .logo{
-        width: 65px;
-        height: auto;
+        width: auto;
       }
       .platform-title{
-        width: 150px;
+        display: none;
       }
       &--buttons {
         width: auto;
+        margin-left: -40px;
       }
     }
   }
   .main {
+    .section-title {
+      font-size: 30px;
+      #top-text{
+        margin-left: -10px;
+      }
+    }
     .top {
       flex-direction: column-reverse;
       justify-content: center;
